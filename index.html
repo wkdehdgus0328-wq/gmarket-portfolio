@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="ko" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>장동현 | 지마켓 Campaign & Deal Planning Manager 포트폴리오</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+        :root {
+            --sk-black: #111827;
+            --sk-white: #FFFFFF;
+            --sk-grey: #F5F5F5;
+            --sk-border: #EEEEEE;
+            /* 지마켓 그린 컬러 적용 */
+            --gmarket-green: #00A752;
+        }
+
+        body {
+            font-family: "Pretendard", sans-serif;
+            background-color: var(--sk-white);
+            color: var(--sk-black);
+            letter-spacing: -0.03em;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+            letter-spacing: 0.05em;
+        }
+
+        .text-accent {
+            color: var(--gmarket-green);
+        }
+
+        .bg-accent {
+            background-color: var(--gmarket-green);
+        }
+
+        .border-accent {
+            border-color: var(--gmarket-green);
+        }
+
+        .hover\:text-accent:hover {
+            color: var(--gmarket-green) !important;
+        }
+
+        .cyber-card {
+            background: var(--sk-white);
+            border: 1px solid var(--sk-border);
+            transition: all 0.3s ease;
+            box-shadow: none;
+        }
+
+        .cyber-card:hover {
+            border-color: var(--sk-black);
+            transform: translateY(-2px);
+        }
+
+        .accordion-content {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.3s ease-in-out;
+        }
+
+        .accordion-content>div {
+            overflow: hidden;
+        }
+
+        .accordion-item.active .accordion-content {
+            grid-template-rows: 1fr;
+        }
+
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--sk-grey);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #CCCCCC;
+            border-radius: 0px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--sk-black);
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .sk-border {
+            border-color: var(--sk-border);
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-black selection:text-white">
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-inter font-extrabold text-xl tracking-tight text-black uppercase">Donghyun <span
+                    class="text-accent underline decoration-1 underline-offset-4">Jang</span></span>
+            <div
+                class="hidden md:flex space-x-8 text-[10px] font-inter tracking-[0.2em] text-gray-400 font-bold uppercase">
+                <a href="#intro" class="hover:text-black transition">01. Intro</a>
+                <a href="#crm" class="hover:text-accent transition">02. Campaign & Deal</a>
+                <a href="#frontline" class="hover:text-accent transition">03. O2O & CX</a>
+                <a href="#ai-ops" class="hover:text-accent transition">04. AI Deal Hunting</a>
+                <a href="#archive" class="hover:text-black transition">05. Process & Collaboration</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro"
+        class="pt-32 pb-20 px-6 max-w-7xl mx-auto min-h-screen flex flex-col justify-center border-b border-gray-100">
+        <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+            <div
+                class="w-48 h-48 md:w-72 md:h-72 flex-shrink-0 overflow-hidden border border-gray-100 sk-border rounded-none p-1 bg-white relative">
+                <img src="./assets/profile.jpg" class="w-full h-full object-cover transition duration-700"
+                    alt="프로필 사진" />
+            </div>
+
+            <div class="flex-1 space-y-8">
+                <div
+                    class="inline-block px-3 py-1 bg-accent text-white text-[9px] font-inter font-bold tracking-[0.3em] uppercase mb-2">
+                    CAMPAIGN / DEAL PLANNING MANAGER CANDIDATE
+                </div>
+
+                <h1
+                    class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-black leading-[1.1] tracking-tighter break-keep mb-6">
+                    데이터 기반으로 타겟 캠페인을 기획하고,<br />
+                    유관 부서와 조율하여 <span
+                        class="underline decoration-1 underline-offset-8 decoration-accent text-accent">바이어 지표를
+                        관리합니다.</span>
+                </h1>
+
+                <div class="flex flex-wrap items-center gap-2 mb-6">
+                    <span
+                        class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-accent text-[12px] font-bold tracking-tight rounded-sm">최고
+                        ROAS 985%</span>
+                    <span
+                        class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-accent text-[12px] font-bold tracking-tight rounded-sm">이탈률
+                        방어 -12.5%p</span>
+                    <span
+                        class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-accent text-[12px] font-bold tracking-tight rounded-sm">리서치
+                        단축 85%↓</span>
+                </div>
+
+                <p class="text-xl text-gray-600 leading-relaxed max-w-2xl font-light break-keep">
+                    40여 개 브랜드의 캠페인을 운영하며 코호트 기반 타겟팅으로 효율을 개선했습니다. 알리바바 역직구 네트워크 기반의 상품 트렌드를 분석하고, 지마켓 셀러와 바이어를 연결하는
+                    딜(Deal) 기획에 도움이 되고 싶습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="crm" class="py-24 px-6 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <span class="text-accent font-inter font-bold text-[9px] tracking-[0.3em] block mb-3 uppercase">02.
+                    Campaign & Deal Planning</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-black tracking-tighter">타겟 코호트 기반 세일즈 캠페인 고도화</h2>
+            </div>
+
+            <div class="space-y-12">
+                <div
+                    class="cyber-card flex flex-col md:flex-row border border-gray-100 overflow-hidden bg-white sk-border mb-12">
+                    <div
+                        class="w-full md:w-1/2 h-80 md:h-auto border-b md:border-b-0 md:border-r border-gray-100 bg-gray-50 grid grid-cols-2 gap-px">
+                        <div
+                            class="relative group cursor-pointer overflow-hidden bg-white flex flex-col items-center justify-center p-2">
+                            <img src="./assets/img-crm-fashion-l.png"
+                                class="w-full h-full object-contain transition duration-700 mb-2" alt="Data 1" />
+                            <span class="text-[9px] font-inter text-gray-500 tracking-tight text-center">진성/관심/이탈 3개 행동
+                                지표 기준 정밀 코호트 분류</span>
+                        </div>
+                        <div
+                            class="relative group cursor-pointer overflow-hidden bg-white flex flex-col items-center justify-center p-2">
+                            <img src="./assets/img-crm-fashion-l2.jpg"
+                                class="w-full h-[150px] md:h-full object-contain transition duration-700 mb-2"
+                                alt="Data 2" />
+                            <span class="text-[9px] font-inter text-gray-500 tracking-tight text-center">경쟁사 비교성과 및 재구매율
+                                파악</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 p-10 md:p-12 flex flex-col justify-center">
+                        <h3 class="font-bold text-2xl text-black mb-6 tracking-tight">바이어 행동 지표 기반 타겟 프로모션 기획
+                            <span
+                                class="block text-[10px] text-gray-400 font-inter mt-3 font-normal uppercase tracking-[0.2em]">Campaign
+                                Optimization</span>
+                        </h3>
+                        <div class="space-y-6 text-sm text-gray-600 font-light leading-relaxed">
+                            <p><strong
+                                    class="text-black font-inter tracking-[0.1em] block mb-2 text-[11px] uppercase">Problem:</strong>
+                                일괄 발송으로 인한 바이어 피로도 증가 및 마케팅 효율 저하.</p>
+                            <p><strong
+                                    class="text-black font-inter tracking-[0.1em] block mb-2 text-[11px] uppercase">Action:</strong>
+                                바이어 행동 지표에 따른 코호트 3단계 분류 및 '피로도 3일 캡' 정책 도입.</p>
+                            <p class="pt-4 border-t border-gray-100"><strong
+                                    class="text-accent block mb-2 font-inter tracking-[0.1em] text-[11px] uppercase">Result:</strong>
+                                코호트 타겟팅 전환 후, 주요 캠페인 기준 ROAS 985% 달성.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="cyber-card flex flex-col md:flex-row-reverse border border-gray-100 overflow-hidden bg-white sk-border mb-12">
+                    <div
+                        class="w-full md:w-1/2 h-80 md:h-auto border-b md:border-b-0 md:border-l border-gray-100 bg-gray-50 flex flex-col gap-px">
+                        <div
+                            class="flex-1 h-full relative group cursor-pointer overflow-hidden bg-white flex flex-col items-center justify-center p-2">
+                            <img src="./assets/img-crm-beauty-r2.png"
+                                class="w-full h-full object-contain transition duration-700 mb-2" alt="Data 3" />
+                            <span class="text-[9px] font-inter text-gray-500 tracking-tight text-center">30일 장바구니 핵심 접점
+                                퍼널 — 이탈률 60% 측정 기준</span>
+                        </div>
+                        <div
+                            class="relative group cursor-pointer overflow-hidden bg-white flex flex-col items-center justify-center p-2 flex-1 border-t border-gray-100">
+                            <img src="./assets/img-crm-beauty-r.png"
+                                class="w-full h-[150px] md:h-full object-contain transition duration-700 mb-2"
+                                alt="Data 4" />
+                            <span class="text-[9px] font-inter text-gray-500 tracking-tight text-center">1회 이상 주문 고객 코호트
+                                분석</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 p-10 md:p-12 flex flex-col justify-center">
+                        <h3 class="font-bold text-2xl text-black mb-6 tracking-tight">바이어 구매 전환율 방어를 위한 넛지 기획
+                            <span
+                                class="block text-[10px] text-gray-400 font-inter mt-3 font-normal uppercase tracking-[0.2em]">Conversion
+                                Rate Optimization</span>
+                        </h3>
+                        <div class="space-y-6 text-sm text-gray-600 font-light leading-relaxed">
+                            <p><strong
+                                    class="text-black font-inter tracking-[0.1em] block mb-2 text-[11px] uppercase">Problem:</strong>
+                                구매 여정 내 특정 접점에서 바이어 이탈률 60% 발생 확인.</p>
+                            <p><strong
+                                    class="text-black font-inter tracking-[0.1em] block mb-2 text-[11px] uppercase">Action:</strong>
+                                이탈 직전 찰나를 캐치하는 조건부 트리거 기반 3단계 넛지 기획.</p>
+                            <p class="pt-4 border-t border-gray-100"><strong
+                                    class="text-accent block mb-2 font-inter tracking-[0.1em] text-[11px] uppercase">Result:</strong>
+                                넛지 로직 적용 후 핵심 접점 이탈률을 60%에서 47.5%로 12.5%p 방어.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="frontline" class="py-24 px-6 max-w-7xl mx-auto border-b border-gray-100 bg-white">
+        <div class="mb-16">
+            <span class="text-[#00A752] font-inter font-bold text-[9px] tracking-[0.3em] block mb-3 uppercase">03.
+                Phygital VOC & CX</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-black tracking-tighter">
+                오프라인 고객 대면 및 피지털(Phygital) 접점 효율화
+            </h2>
+            <p class="text-gray-600 mt-6 max-w-2xl text-sm leading-relaxed font-light break-keep">
+                영어 환경의 매장 및 오프라인 접점에서 고객을 직접 대면하며, 시스템적 사고를 통해 물리적 환경의 운영 비효율을 분석하고 개선한 경험입니다.
+            </p>
+        </div>
+
+        <div class="space-y-8">
+            <div class="cyber-card flex flex-col md:flex-row border border-gray-100 overflow-hidden bg-white sk-border">
+                <div
+                    class="w-full md:w-1/2 h-80 md:h-auto border-b md:border-b-0 md:border-r border-gray-100 bg-gray-50 grid grid-cols-2 gap-px">
+                    <div
+                        class="relative group cursor-pointer overflow-hidden bg-white flex items-center justify-center p-2">
+                        <img src="./assets/stanley-ref-1.jpg"
+                            class="w-full h-full object-contain transition duration-700" alt="프로모션 기획안" />
+                    </div>
+                    <div
+                        class="relative group cursor-pointer overflow-hidden bg-white flex items-center justify-center p-2">
+                        <img src="./assets/stanley-ref-2.jpg" class="w-full h-full object-cover transition duration-700"
+                            alt="현장 VOC 데이터화" />
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-10 md:p-12 flex flex-col justify-center">
+                    <h3 class="font-bold text-2xl text-black border-l-4 border-[#00A752] pl-5 tracking-tight mb-6">
+                        현장 VOC 데이터 분석을 통한 오프라인 체험 콘텐츠 기획
+                        <span
+                            class="block text-[10px] text-gray-400 font-inter mt-3 font-normal uppercase tracking-[0.2em]">STANLEY
+                            BLACK&DECKER</span>
+                    </h3>
+                    <div class="space-y-6 text-sm text-gray-600 font-light leading-relaxed">
+                        <p><strong
+                                class="text-black font-inter tracking-[0.1em] block mb-2 text-[11px] uppercase">Problem:</strong>
+                            오프라인 매장 방문객 감소에 따른 서비스 접점 및 파이프라인 정체.</p>
+                        <p><strong
+                                class="text-black font-inter tracking-[0.1em] block mb-2 text-[11px] uppercase">Action:</strong>
+                            4,200여 명의 오프라인 대면 고객에게서 수집한 VOC를 분석하여 '우드 무드등' 체험 콘텐츠를 기획 및 제안.</p>
+                        <p class="pt-4 border-t border-gray-100"><strong
+                                class="text-accent block mb-2 font-inter tracking-[0.1em] text-[11px] uppercase">Result:</strong>
+                            파트장 승인 후 실행을 보조하여 비수기(12월) 방문 고객 전월 대비 약 1,200명 증대 달성.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="cyber-card flex flex-col md:flex-row-reverse border border-gray-100 overflow-hidden bg-white sk-border">
+                <div
+                    class="w-full md:w-1/2 h-80 md:h-auto border-b md:border-b-0 md:border-l border-gray-100 bg-gray-50 grid grid-cols-2 gap-px">
+                    <div
+                        class="relative group cursor-pointer overflow-hidden bg-white flex items-center justify-center p-2">
+                        <img src="./assets/ikea-ref-1.jpg" class="w-full h-full object-contain transition duration-700"
+                            alt="IKEA 매장 시스템" />
+                    </div>
+                    <div
+                        class="relative group cursor-pointer overflow-hidden bg-white flex items-center justify-center p-2">
+                        <img src="./assets/ikea-ref-2.jpg" class="w-full h-full object-cover transition duration-700"
+                            alt="Red Line 도입 현장" />
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-10 md:p-12 flex flex-col justify-center">
+                    <h3 class="font-bold text-2xl text-black border-l-4 border-[#00A752] pl-5 tracking-tight mb-6">
+                        물리적 기준선(Red Line) 도입으로 매장 오퍼레이션 개선
+                        <span
+                            class="block text-[10px] text-gray-400 font-inter mt-3 font-normal uppercase tracking-[0.2em]">IKEA
+                            Canada — 푸드 마켓 캐셔 및 매장 관리</span>
+                    </h3>
+                    <div class="space-y-6 text-sm text-gray-600 font-light leading-relaxed">
+                        <p><strong
+                                class="text-black font-inter tracking-[0.1em] block mb-2 text-[11px] uppercase">Problem:</strong>
+                            100% 영어 환경의 매장에서 재고 보충 시기를 관리자가 매번 육안으로 확인해야 하는 비효율 발생.</p>
+                        <p><strong
+                                class="text-black font-inter tracking-[0.1em] block mb-2 text-[11px] uppercase">Action:</strong>
+                            빨간 테이프로 물리적 기준선(Red Line)을 만들어 누구나 즉시 인지할 수 있는 직관적인 행동 트리거 제안.</p>
+                        <p class="pt-4 border-t border-gray-100"><strong
+                                class="text-accent block mb-2 font-inter tracking-[0.1em] text-[11px] uppercase">Result:</strong>
+                            제안 채택 후 관리자의 불필요한 현장 순회 동선 제거 및 글로벌 근무지 내 실무 효율 개선.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-ops" class="py-24 px-6 border-b border-gray-100 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <span class="text-black font-inter font-bold text-[9px] tracking-[0.3em] block mb-3 uppercase">04. AI
+                    Deal Hunting & Automation</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-black mb-6 tracking-tighter">AI 기반 글로벌 커머스 딜 헌팅 고도화
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <div class="cyber-card p-8 md:p-10 flex flex-col h-full bg-white sk-border">
+                    <h3 class="text-xl font-bold text-black mb-2 flex justify-between items-center tracking-tight">
+                        해외 커머스 트렌드 자동 수집 파이프라인 (PickPilot)
+                        <span
+                            class="text-[9px] font-inter text-gray-400 border border-gray-100 px-2 py-1 uppercase tracking-wider">개인
+                            프로젝트 · 구축 완료 및 지속 업데이트 중</span>
+                        <span
+                            class="text-[9px] font-inter text-gray-400 border border-gray-100 px-2 py-1 uppercase tracking-wider">Productivity</span>
+                    </h3>
+                    <p
+                        class="text-black text-[10px] font-inter font-bold tracking-[0.2em] uppercase mb-4 border-b border-gray-100 pb-4">
+                        Agentic Workflow & API Automation
+                    </p>
+                    <div
+                        class="bg-gray-50 border border-gray-100 p-5 mb-8 rounded-none space-y-3 text-[13px] text-gray-600 font-light">
+                        <p><strong class="text-black font-inter tracking-wider uppercase text-[11px]">Action:</strong>
+                            아마존 등 해외 커머스 리뷰를 수작업으로 소싱하는 시간을 줄이기 위해, API와 n8n을 연동하여 리뷰 데이터를 자동 수집하고 요약하는 워크플로우를 구축.</p>
+                        <p class="pt-3 border-t border-gray-200"><strong
+                                class="text-accent font-inter tracking-wider uppercase text-[11px]">Result:</strong> 수작업
+                            대비 리서치 리드타임을 85% 단축하여 신속한 딜 헌팅(Deal Hunting) 지원 가능.</p>
+                    </div>
+                    <div class="mb-8">
+                        <h4
+                            class="text-[11px] font-bold text-black mb-4 border-l-2 border-black pl-3 uppercase tracking-widest">
+                            MCP-Based Agentic Architecture
+                        </h4>
+                        <div
+                            class="bg-white border border-gray-100 p-1 rounded-none relative group cursor-pointer overflow-hidden sk-border">
+                            <img src="./assets/pickpilot-main.png"
+                                class="w-full h-auto object-cover transition duration-700"
+                                alt="PickPilot Architecture" />
+                        </div>
+                        <p
+                            class="mt-4 text-[13px] text-gray-500 leading-relaxed bg-gray-50 p-4 border-l-2 border-gray-200 font-light">
+                            MCP 서버 기반 에이전트가 API를 직접 제어하며 <strong class="text-black">[데이터 수집 ➔ AI 가공 ➔
+                                콘텐츠 생성]</strong>을 자동으로 수행하는 구조.
+                        </p>
+                    </div>
+                    <div class="mb-6">
+                        <h4
+                            class="text-[11px] font-bold text-black mb-4 border-l-2 border-black pl-3 uppercase tracking-widest">
+                            Output Examples
+                        </h4>
+                        <div class="grid grid-cols-2 gap-2 h-24 md:h-32">
+                            <div
+                                class="h-full border border-gray-100 bg-gray-50 relative group cursor-pointer overflow-hidden">
+                                <img src="./assets/pickpilot5.jpg"
+                                    class="w-full h-full object-cover cursor-pointer hover:scale-105 transition duration-300"
+                                    alt="Result 1" />
+                            </div>
+                            <div
+                                class="h-full border border-gray-100 bg-gray-50 relative group cursor-pointer overflow-hidden">
+                                <img src="./assets/pickpilot6.jpg"
+                                    class="w-full h-full object-cover cursor-pointer hover:scale-105 transition duration-300"
+                                    alt="Result 2" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="cyber-card p-8 md:p-10 flex flex-col justify-center relative overflow-hidden h-full bg-white">
+                    <div
+                        class="absolute -right-10 -top-10 text-[120px] font-inter font-black text-gray-50 pointer-events-none uppercase">
+                        AI
+                    </div>
+                    <h3
+                        class="text-xl font-bold text-black mb-2 flex justify-between items-center relative z-10 tracking-tight">
+                        대량 VOC 자동 분류 시스템 PoC
+                        <span
+                            class="text-[9px] font-inter text-gray-400 border border-gray-100 px-2 py-1 uppercase tracking-wider">CJ
+                            AX WAVE 교육 과정 내 프로젝트</span>
+                    </h3>
+                    <p
+                        class="text-black text-[10px] font-inter font-bold tracking-[0.2em] uppercase mb-6 border-b border-gray-100 pb-4 relative z-10">
+                        Zero-touch Operations
+                    </p>
+                    <div
+                        class="bg-gray-50 border border-gray-100 p-5 text-[13px] relative z-10 mb-8 rounded-none font-light text-gray-600">
+                        <p class="mb-3">
+                            <strong class="text-black font-inter tracking-wider uppercase text-[11px]">Background &
+                                Goal:</strong>
+                            바이어 VOC 데이터를 RAG 기반으로 자동 분류하여 리콜 등 치명적 리스크 감지 시스템 검증(교육 과정 내 프로젝트).
+                        </p>
+                        <p class="pt-3 border-t border-gray-200">
+                            <strong
+                                class="text-[#00A752] font-inter tracking-wider uppercase text-[11px]">Impact:</strong>
+                            특정 엣지 케이스 필터링 작동 100% 검증. 글로벌 플랫폼 내 에스컬레이션 이슈 조기 대응에 즉시 활용 가능.
+                        </p>
+                    </div>
+
+                    <div class="mb-8 relative z-10">
+                        <div
+                            class="border border-gray-100 bg-white overflow-hidden group cursor-pointer relative sk-border">
+                            <img src="./assets/ai-voc-2.png" class="w-full h-auto object-cover transition duration-700"
+                                alt="Pipeline Architecture" />
+                        </div>
+                        <p class="text-center text-[10px] text-gray-400 mt-3 font-inter tracking-widest uppercase">n8n &
+                            LLM 기반 VOC 라우팅 오케스트레이션 설계</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+                        <div class="flex flex-col gap-4">
+                            <div
+                                class="h-32 border border-gray-100 bg-white overflow-hidden group cursor-pointer relative rounded-none sk-border">
+                                <img src="./assets/ai-voc-1.png"
+                                    class="w-full h-full object-contain transition duration-500"
+                                    alt="Data Extraction" />
+                            </div>
+                            <div>
+                                <strong
+                                    class="text-black block mb-2 text-[10px] font-inter uppercase tracking-widest border-l-2 border-black pl-3">[STEP
+                                    1] Data Extract</strong>
+                                <p class="text-[12px] text-gray-500 leading-tight font-light">VOC 데이터 임베딩 및 Supabase 적재를
+                                    통한 기초 데이터 구조화.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-4">
+                            <div
+                                class="h-32 border border-gray-100 bg-white overflow-hidden group cursor-pointer relative rounded-none sk-border">
+                                <img src="./assets/ai-voc-4.png"
+                                    class="w-full h-full object-contain transition duration-500"
+                                    alt="AI Intelligence" />
+                            </div>
+                            <div>
+                                <strong
+                                    class="text-black block mb-2 text-[10px] font-inter uppercase tracking-widest border-l-2 border-black pl-3">[Step
+                                    2] AI Intelligence</strong>
+                                <p class="text-[12px] text-gray-500 leading-tight font-light">보수적인 Temperature 세팅으로 객관성
+                                    확보 및 할루시네이션 원천 차단.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-4">
+                            <div
+                                class="h-32 border border-gray-100 bg-white overflow-hidden group cursor-pointer relative rounded-none sk-border">
+                                <img src="./assets/ai-voc-3.png"
+                                    class="w-full h-full object-contain transition duration-300"
+                                    alt="Fallback Routing" />
+                            </div>
+                            <div>
+                                <strong
+                                    class="text-black block mb-1 text-xs font-inter uppercase tracking-widest border-l-2 border-black pl-2">[Step
+                                    3] Fallback Routing</strong>
+                                <p class="text-[13px] text-gray-400 leading-tight">치명적 키워드 감지 시 휴먼 인 더
+                                    루프(Human-in-the-Loop) 우회 로직으로 할루시네이션 리스크를 최소화했습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="archive" class="py-24 px-6 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <span class="text-black font-inter font-bold text-[9px] tracking-[0.3em] block mb-3 uppercase">05.
+                    Escalation & Communication</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-black tracking-tighter">History Tracking 및 유관 부서
+                    커뮤니케이션 조율
+                </h2>
+                <p class="text-gray-600 mt-6 max-w-2xl text-sm leading-relaxed font-light">
+                    프로젝트 진행 중 발생할 수 있는 정보 누락을 통제하고, 글로벌 환경에서 타 부서와 명확하게 소통하여 에스컬레이션 이슈를 신속하게 해결합니다.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="cyber-card p-10 bg-white sk-border flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-black tracking-tight">협업 가이드라인 수립을 통한 에스컬레이션 대응 관리</h3>
+                            <p class="text-[10px] text-gray-400 font-inter mt-2 uppercase tracking-widest">
+                                Cross-Functional Collaboration</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6 text-sm text-gray-600 font-light leading-relaxed flex-1">
+                        <p><strong
+                                class="text-black font-inter tracking-[0.1em] block mb-2 text-[11px] uppercase">Problem
+                                & Action:</strong>
+                            다수 캠페인 병렬 운영 중 개발팀 이슈 조치 요청 시 정보 누락으로 인한 병목 발생. 식별자(UUID) 등 필수 정보를 기재하는 '수정 요청 가이드라인' 수립 및
+                            전사 공유.</p>
+                        <p class="pt-4 border-t border-gray-100"><strong
+                                class="text-accent block mb-2 font-inter tracking-[0.1em] text-[11px] uppercase">Result:</strong>
+                            History Tracking 시스템 확립으로 정보 누락 방지 및 배포 에러 0건 달성.</p>
+                    </div>
+                </div>
+
+                <div class="cyber-card p-10 bg-white sk-border flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-black tracking-tight">글로벌 업무 환경 커뮤니케이션(Fluent) 및 영어 역량
+                            </h3>
+                            <p class="text-[10px] text-gray-400 font-inter mt-2 uppercase tracking-widest">Stakeholder
+                                Management</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6 text-sm text-gray-600 font-light leading-relaxed flex-1">
+                        <p><strong
+                                class="text-black font-inter tracking-[0.1em] block mb-2 text-[11px] uppercase">Problem
+                                & Action:</strong>
+                            이케아 캐나다 100% 영어 환경 근무 및 글로벌 마켓 리서치를 위한 해외 API 연동 등 언어 장벽이 있는 환경에서 주도적으로 문제를 해결.</p>
+                        <p class="pt-4 border-t border-gray-100"><strong
+                                class="text-accent block mb-2 font-inter tracking-[0.1em] text-[11px] uppercase">Result:</strong>
+                            비즈니스 통번역 ITT 1급/2급 자격을 바탕으로, 글로벌 CX 파트너사 및 BPO 조직과의 매끄러운 커뮤니케이션과 영문 매뉴얼 작성 역량 보유.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-32 px-6 bg-accent text-white text-center">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <span class="font-inter font-bold text-[10px] tracking-[0.5em] text-white uppercase opacity-80">GMARKET
+                CAMPAIGN / DEAL PLANNING MANAGER PORTFOLIO</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tighter break-keep">
+                데이터로 타겟의 니즈를 읽고,<br />
+                매력적인 딜(Deal) 기획으로 지마켓의 성장에 기여하겠습니다.
+            </h2>
+
+            <div class="pt-12 flex flex-col md:flex-row items-center justify-center gap-4 relative z-20">
+                <a href="mailto:wkdehdgus0328@gmail.com"
+                    class="group inline-flex items-center justify-center border border-white px-10 py-4 font-inter font-bold text-xs hover:bg-white hover:text-accent transition duration-500 cursor-pointer w-full md:w-auto">
+                    <span class="uppercase tracking-[0.2em] mr-2">Email:</span>
+                    <span class="lowercase tracking-wider">wkdehdgus0328@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/donghyun-jang-2071593b3/" target="_blank"
+                    class="inline-flex items-center justify-center border border-white/30 text-white/80 px-10 py-4 font-inter font-bold text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-accent transition duration-500 cursor-pointer w-full md:w-auto">
+                    LinkedIn Profile
+                </a>
+            </div>
+
+            <p class="text-[rgba(255,255,255,0.6)] font-inter text-[10px] pt-20 tracking-widest uppercase">
+                &copy; 2026 DONGHYUN JANG. GMARKET PORTFOLIO.
+            </p>
+        </div>
+    </footer>
+
+    <div id="lightbox"
+        class="fixed inset-0 z-[100] bg-white/95 hidden flex-col items-center justify-center opacity-0 transition-opacity duration-300 backdrop-blur-sm">
+        <button id="lightbox-close"
+            class="absolute top-6 right-8 text-black hover:text-gray-500 text-5xl font-light transition">
+            &times;
+        </button>
+        <img id="lightbox-img" src="" alt="Enlarged view"
+            class="max-w-[90%] max-h-[90vh] object-contain border border-gray-100 shadow-none pointer-events-auto" />
+        <p class="text-gray-400 font-inter text-[10px] mt-8 tracking-[0.3em] uppercase">
+            Click to close
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            const closeBtn = document.getElementById("lightbox-close");
+
+            document.body.addEventListener("click", (e) => {
+                if (e.target.tagName === "IMG" && e.target.id !== "lightbox-img") {
+                    document.body.style.overflow = "hidden";
+                    lightboxImg.src = e.target.src;
+                    lightbox.classList.remove("hidden");
+                    setTimeout(() => lightbox.classList.remove("opacity-0"), 10);
+                }
+            });
+
+            const closeLightbox = () => {
+                document.body.style.overflow = "auto";
+                lightbox.classList.add("opacity-0");
+                setTimeout(() => {
+                    lightbox.classList.add("hidden");
+                    lightboxImg.src = "";
+                }, 300);
+            };
+
+            closeBtn.addEventListener("click", closeLightbox);
+            lightbox.addEventListener("click", (e) => {
+                if (e.target === lightbox || e.target.tagName === "P")
+                    closeLightbox();
+            });
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape" && !lightbox.classList.contains("hidden"))
+                    closeLightbox();
+            });
+        });
+    </script>
+</body>
+
+</html>
